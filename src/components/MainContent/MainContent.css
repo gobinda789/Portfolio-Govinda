@@ -1,0 +1,25 @@
+
+.main-content {
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-1);
+  /* min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto; */
+  position: relative;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .main-content {
+    min-height: auto;
+    max-height: none;
+  }
+} 
+
+
