@@ -1,6 +1,7 @@
 // src/data/portfolioData.js
 import profileImg from "../assets/images/profile.jpg";
 import agriculture from "../assets/images/AGB.jpeg";
+import analyzer from "../assets/images/System_image.png"; // TODO: Replace with actual project image
 import linefollowing from "../assets/images/LFR.png";
 import object from "../assets/images/ODFB.png";
 
@@ -115,5 +116,13 @@ export const projects = [
     description: "A sensor-based line following robot demonstrating foundational robotics skills including sensor integration, motor control, and algorithmic path following. :contentReference[oaicite:4]{index=4}",
     fullDescription: "The Line Following Robot is a fundamental robotics project that showcases essential skills in sensor integration, motor control, and algorithmic path following. The robot is equipped with infrared sensors that detect the contrast between the line and the surface, allowing it to follow a predefined path accurately. The embedded control system processes sensor data in real-time to adjust the robot's movement, ensuring it stays on course. This project serves as an excellent introduction to robotics, providing hands-on experience with hardware components and programming logic required for autonomous navigation.",
     githubUrl: "https://github.com/gobinda789/Line-following-Bot"
+  },
+  {
+    title: "Smart Power Quality Analyzer - AI Load Classification",
+    category: "AI & Machine Learning",
+    image: analyzer,
+    description: "An AI-driven system for real-time power quality monitoring and classification of electrical loads using machine learning models.",
+    fullDescription: "This project leverages AI and Signal Processing to analyze electrical data and classify load behaviors. It identifies specific devices (e.g., HVAC, heaters, fans) and detects abnormalities such as inrush currents or voltage sags. Built with Python and Streamlit, it provides engineering insights for predictive maintenance and grid efficiency.",
+    githubUrl: "https://github.com/gobinda789/Smart-Power-Quality-Analyzer-AI-Load-Classification"
   }
 ];
