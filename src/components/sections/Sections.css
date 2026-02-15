@@ -2,7 +2,7 @@
 
 .article {
   animation: fadeIn 0.5s;
-    width: 100%;
+  width: 100%;
   min-height: 400px;
 }
 
@@ -11,6 +11,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -24,7 +25,7 @@
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 10px;
- 
+
 }
 
 .article-title::after {
@@ -46,6 +47,51 @@
   margin-bottom: 30px;
 }
 
+.section-title {
+  color: var(--white-2);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--text-gradient-yellow);
+  border-radius: 2px;
+}
+
+.interests-container {
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.interest-item {
+  color: var(--light-gray);
+  font-size: 14px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.interest-bullet {
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+  line-height: 1;
+}
+
 .service-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,12 +107,14 @@
 }
 
 .service-item:hover {
-  background: var(--bg-gradient-yellow);
+  background: var(--eerie-black-1);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--jet);
 }
 
-.service-item:hover .service-title,
-.service-item:hover .service-icon-box {
-  color: var(--smoky-black);
+.service-item:hover .service-title {
+  color: var(--orange-yellow-crayola);
 }
 
 .service-icon-box {
@@ -86,6 +134,69 @@
   color: var(--light-gray);
   font-size: 13px;
   line-height: 1.6;
+}
+
+/* Resume PDF Viewer */
+.resume-pdf-section {
+  margin-bottom: 35px;
+}
+
+.resume-pdf-viewer-wrapper {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--jet);
+  margin-bottom: 20px;
+  background: var(--border-gradient-onyx);
+}
+
+.resume-pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 28px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.resume-download-btn:hover {
+  background: var(--bg-gradient-yellow);
+  color: var(--smoky-black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 177, 66, 0.3);
+}
+
+.resume-download-btn:hover svg {
+  animation: downloadBounce 0.6s ease infinite;
+}
+
+@keyframes downloadBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 /* Timeline (Resume Section) */
@@ -200,6 +311,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 .project-item {
   background: var(--border-gradient-onyx);
   border-radius: 16px;
@@ -264,6 +376,7 @@
     opacity: 0;
     transform: scale(0.5);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -307,6 +420,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -329,6 +443,7 @@
     transform: translateY(50px) scale(0.9);
     opacity: 0;
   }
+
   to {
     transform: translateY(0) scale(1);
     opacity: 1;
@@ -528,6 +643,10 @@
 
   .project-list {
     grid-template-columns: 1fr;
+  }
+
+  .resume-pdf-viewer {
+    height: 400px;
   }
 
   .modal-content {

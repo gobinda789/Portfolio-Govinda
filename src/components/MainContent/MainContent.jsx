@@ -12,7 +12,7 @@ const MainContent = ({ aboutMe, education, experience, skills, projects }) => {
 
   // Get the title based on active tab
   const getTitle = () => {
-    switch(activeTab) {
+    switch (activeTab) {
       case 'about': return 'About me';
       case 'resume': return 'Resume';
       case 'projects': return 'Projects';
@@ -31,13 +31,7 @@ const MainContent = ({ aboutMe, education, experience, skills, projects }) => {
 
       {/* Content sections */}
       {activeTab === 'about' && <About aboutMe={aboutMe} />}
-      {activeTab === 'resume' && (
-        <Resume 
-          education={education} 
-          experience={experience} 
-          skills={skills} 
-        />
-      )}
+      {activeTab === 'resume' && <Resume />}
       {activeTab === 'projects' && <Projects projects={projects} />}
       {activeTab === 'contact' && <Contact />}
     </div>

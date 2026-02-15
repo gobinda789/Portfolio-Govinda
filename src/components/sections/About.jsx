@@ -10,10 +10,25 @@ const About = ({ aboutMe }) => {
             {paragraph}
           </p>
         ))}
+
+        {aboutMe.interests && (
+          <div className="interests-container">
+            <p className="about-text" style={{ marginBottom: '10px', fontWeight: '600', color: 'var(--white-2)' }}>
+              I am particularly interested in:
+            </p>
+            <ul className="interests-list">
+              {aboutMe.interests.map((interest, index) => (
+                <li key={index} className="interest-item">
+                  <span className="interest-bullet">▹</span> {interest}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
 
       <section>
-        <h3 className="service-title">Things I am Good at</h3>
+        <h3 className="section-title">Things I'm Good At</h3>
 
         <div className="service-list">
           {aboutMe.services.map((service, index) => (
