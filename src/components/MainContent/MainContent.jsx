@@ -4,10 +4,11 @@ import Navbar from './Navbar';
 import About from '../sections/About';
 import Resume from '../sections/Resume';
 import Projects from '../sections/Projects';
+import Certificates from '../sections/Certificates';
 import Contact from '../sections/Contact';
 import './MainContent.css';
 
-const MainContent = ({ aboutMe, education, experience, skills, projects }) => {
+const MainContent = ({ aboutMe, education, experience, skills, projects, certificates }) => {
   const [activeTab, setActiveTab] = useState('about');
 
   // Get the title based on active tab
@@ -16,6 +17,7 @@ const MainContent = ({ aboutMe, education, experience, skills, projects }) => {
       case 'about': return 'About me';
       case 'resume': return 'Resume';
       case 'projects': return 'Projects';
+      case 'certificates': return 'Certifications';
       case 'contact': return 'Contact';
       default: return 'About me';
     }
@@ -33,6 +35,7 @@ const MainContent = ({ aboutMe, education, experience, skills, projects }) => {
       {activeTab === 'about' && <About aboutMe={aboutMe} />}
       {activeTab === 'resume' && <Resume />}
       {activeTab === 'projects' && <Projects projects={projects} />}
+      {activeTab === 'certificates' && <Certificates certificates={certificates} />}
       {activeTab === 'contact' && <Contact />}
     </div>
   );

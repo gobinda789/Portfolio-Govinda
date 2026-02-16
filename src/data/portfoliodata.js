@@ -126,3 +126,30 @@ export const projects = [
     githubUrl: "https://github.com/gobinda789/Smart-Power-Quality-Analyzer-AI-Load-Classification"
   }
 ];
+
+export const certificates = [
+  {
+    title: " Supervised Machine Learning: Regression and Classification",
+    issuer: "DeepLearning.AI",
+    date: "2026",
+    image: agriculture, // Placeholder preview - user can update this later
+    fileUrl: "/assets/certificates/Deeplearning_certificate.png",
+    category: "Deep Learning"
+  },
+  {
+    title: "Fundamentals of Machine Learning and AI",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2026",
+    image: analyzer, // Placeholder preview
+    fileUrl: "/assets/certificates/Fundamental of machine learning and AI.pdf",
+    category: "Machine Learning"
+  },
+  {
+    title: "AWS Machine Learning Certification",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2026",
+    image: object, // Placeholder preview
+    fileUrl: "/assets/certificates/aws machine learning certification.pdf",
+    category: "Cloud & ML"
+  }
+];

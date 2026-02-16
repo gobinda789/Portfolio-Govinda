@@ -2,7 +2,7 @@
 import './Navbar.css';
 
 const Navbar = ({ activeTab, setActiveTab }) => {
-  const tabs = ['about', 'resume', 'projects', 'contact'];
+  const tabs = ['about', 'resume', 'projects', 'certificates', 'contact'];
 
   return (
     <nav className="navbar">
