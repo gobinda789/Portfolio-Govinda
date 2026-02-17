@@ -26,6 +26,7 @@ A **modern, responsive personal portfolio website** built with **React** and **V
 
 ⚙️ Deployment
 
+
 You can deploy this portfolio using:
 
 GitHub Pages (automatic static hosting)
@@ -33,6 +34,7 @@ GitHub Pages (automatic static hosting)
 Netlify (drag & drop or Git integration)
 
 Vercel (best for React/Vite apps)
+
 
 👉 For GitHub Pages, build the project and publish the dist/ folder via the Pages settings.
 
