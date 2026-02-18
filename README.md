@@ -36,6 +36,7 @@ Netlify (drag & drop or Git integration)
 Vercel (best for React/Vite apps)
 
 
+
 👉 For GitHub Pages, build the project and publish the dist/ folder via the Pages settings.
 
 ✨ Customization
