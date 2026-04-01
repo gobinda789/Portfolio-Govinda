@@ -4,6 +4,7 @@ import agriculture from "../assets/images/AGB.jpeg";
 import analyzer from "../assets/images/System_image.png"; // TODO: Replace with actual project image
 import linefollowing from "../assets/images/LFR.png";
 import object from "../assets/images/ODFB.png";
+import serenity from "../assets/images/serenity.png";
 
 export const personalInfo = {
   name: "Govinda Bhandari",
@@ -93,6 +94,14 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Serenity – Mental Health Support App",
+    category: "Mobile App & AI",
+    image: serenity,
+    description: "A Flutter-based mental health support app providing a safe, anonymous space for emotional reflection, journaling, peer-to-peer support, real-time chat, and AI-assisted features. Built for the US-Nepal Hackathon.",
+    fullDescription: "Serenity is a Flutter-based mental health support app designed to give people a safer, more approachable way to reflect on their emotional state, journal privately, discover peer communities, and talk anonymously with others who may understand similar experiences. Key features include daily mood tracking with local persistence, voice-assisted emotional check-ins using speech-to-text and sentiment analysis, private journaling with prompts, real-time WebSocket-powered anonymous peer chat, community discovery and group support, and an insights dashboard built from real user data. The backend is powered by FastAPI with SQLite and supports REST APIs, WebSocket chat, and modular architecture ready for cloud expansion. The app uses Provider for state management and follows a local-first approach to remain functional even without backend connectivity.",
+    githubUrl: "https://github.com/gobinda789/serenity-mental-health-app"
+  },
   {
     title: "Smart Agriculture Bot",
     category: "Robotics & Embedded Systems",
