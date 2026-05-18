@@ -178,6 +178,7 @@
   display: block;
 }
 
+.resume-open-btn,
 .resume-download-btn {
   display: inline-flex;
   align-items: center;
@@ -197,6 +198,11 @@
   letter-spacing: 0.5px;
 }
 
+.resume-open-btn {
+  margin-bottom: 12px;
+}
+
+.resume-open-btn:hover,
 .resume-download-btn:hover {
   background: var(--bg-gradient-yellow);
   color: var(--smoky-black);
@@ -809,7 +815,13 @@
   }
 
   .resume-pdf-viewer {
-    height: 400px;
+    height: 620px;
+    min-width: 680px;
+  }
+
+  .resume-pdf-viewer-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .modal-content {

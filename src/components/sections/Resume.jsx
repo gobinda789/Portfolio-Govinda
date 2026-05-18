@@ -19,6 +19,14 @@ const Resume = () => {
         </div>
         <a
           href={pdfUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-open-btn"
+        >
+          Open CV
+        </a>
+        <a
+          href={pdfUrl}
           download="Govinda_Bhandari_CV.pdf"
           className="resume-download-btn"
         >
