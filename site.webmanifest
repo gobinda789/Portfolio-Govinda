@@ -1,0 +1,21 @@
+{
+  "name": "Govinda Bhandari Portfolio",
+  "short_name": "Govinda",
+  "description": "Portfolio of Govinda Bhandari, focused on machine learning, embedded systems, robotics, and practical engineering projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#1f1f22",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/og-image.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
