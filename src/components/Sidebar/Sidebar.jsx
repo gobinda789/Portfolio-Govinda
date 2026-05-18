@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Sidebar.css';
 
-const Sidebar = ({ personalInfo }) => {
+const Sidebar = ({ personalInfo, scrollProgress = 0 }) => {
   const [showContacts, setShowContacts] = useState(false);
+  const sidebarRef = useRef(null);
+
+  useEffect(() => {
+    const sidebar = sidebarRef.current;
+    if (!sidebar) return;
+
+    const maxScroll = sidebar.scrollHeight - sidebar.clientHeight;
+    sidebar.scrollTop = Math.max(0, maxScroll) * scrollProgress;
+  }, [scrollProgress, showContacts]);
 
   return (
-    <aside className="sidebar">
+    <aside className="sidebar" ref={sidebarRef}>
       <div className="sidebar-info">
         <div className="avatar-box">
           <img src={personalInfo.avatar} alt={personalInfo.name} className="avatar" />

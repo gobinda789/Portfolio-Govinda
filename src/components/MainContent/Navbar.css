@@ -29,6 +29,12 @@
   color: var(--orange-yellow-crayola);
 }
 
+.navbar-link:focus,
+.navbar-link:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 .navbar-link::after {
   content: '';
   position: absolute;
