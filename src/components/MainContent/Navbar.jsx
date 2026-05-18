@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
 const Navbar = ({ activeTab, setActiveTab }) => {
@@ -10,6 +10,23 @@ const Navbar = ({ activeTab, setActiveTab }) => {
     setActiveTab(tab);
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const closeMenuAtTop = () => {
+      const menu = document.getElementById('mobile-section-menu');
+      const menuStart = menu ? menu.getBoundingClientRect().top + window.scrollY : 0;
+
+      if (window.scrollY <= menuStart + 2) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('scroll', closeMenuAtTop, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', closeMenuAtTop);
+    };
+  }, []);
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>

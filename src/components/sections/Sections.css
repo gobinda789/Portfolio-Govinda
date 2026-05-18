@@ -178,6 +178,10 @@
   display: block;
 }
 
+.resume-mobile-card {
+  display: none;
+}
+
 .resume-open-btn,
 .resume-download-btn {
   display: inline-flex;
@@ -814,14 +818,50 @@
     grid-template-columns: 1fr;
   }
 
-  .resume-pdf-viewer {
-    height: 620px;
-    min-width: 680px;
+  .resume-pdf-viewer-wrapper {
+    display: none;
   }
 
-  .resume-pdf-viewer-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  .resume-mobile-card {
+    align-items: center;
+    background: var(--border-gradient-onyx);
+    border: 1px solid var(--jet);
+    border-radius: 14px;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 18px;
+  }
+
+  .resume-mobile-icon {
+    align-items: center;
+    background: var(--bg-gradient-yellow);
+    border-radius: 12px;
+    color: var(--smoky-black);
+    display: flex;
+    flex: 0 0 54px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+  }
+
+  .resume-mobile-title {
+    color: var(--white-2);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .resume-mobile-text {
+    color: var(--light-gray);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .resume-open-btn,
+  .resume-download-btn {
+    padding: 13px 18px;
   }
 
   .modal-content {
