@@ -5,6 +5,24 @@
   padding: 30px;
   box-shadow: var(--shadow-1);
   position: relative;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--jet) transparent;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: var(--jet);
+  border-radius: 8px;
 }
 
 /* Header containing title and navbar */
@@ -39,8 +57,10 @@
 
 @media (max-width: 1024px) {
   .main-content {
+    height: auto;
     min-height: auto;
     max-height: none;
+    overflow-y: visible;
   }
 }
 
