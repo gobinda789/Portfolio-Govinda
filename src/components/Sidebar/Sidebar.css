@@ -9,7 +9,25 @@
   position: sticky;
   top: 50px;
   height: fit-content;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--jet) transparent;
   animation: sidebarReveal 0.65s ease both;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--jet);
+  border-radius: 8px;
 }
 
 
@@ -195,6 +213,8 @@
 @media (max-width: 1024px) {
   .sidebar {
     position: static;
+    max-height: none;
+    overflow-y: visible;
   }
 }
 

@@ -41,20 +41,17 @@ body {
   grid-template-columns: 320px 1fr;
   gap: 25px;
   max-width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 50px 20px;
   align-items: start;
-  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
   .main-container {
     grid-template-columns: 1fr;
-    height: auto;
     min-height: 100vh;
     padding: 20px;
-    overflow: visible;
   }
 }
 
