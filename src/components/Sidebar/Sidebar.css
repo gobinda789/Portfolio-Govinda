@@ -9,6 +9,7 @@
   position: sticky;
   top: 50px;
   height: fit-content;
+  animation: sidebarReveal 0.65s ease both;
 }
 
 
@@ -70,6 +71,7 @@
 .contacts-list {
   margin-top: 20px;
   margin-bottom: 20px;
+  animation: contactsReveal 0.35s ease both;
 }
 
 .contact-item {
@@ -164,6 +166,30 @@
 .social-icon {
   width: 18px;
   height: 18px;
+}
+
+@keyframes sidebarReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes contactsReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1024px) {

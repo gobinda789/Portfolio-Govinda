@@ -31,12 +31,13 @@ const MainContent = ({ aboutMe, education, experience, skills, projects, certifi
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
 
-      {/* Content sections */}
-      {activeTab === 'about' && <About aboutMe={aboutMe} />}
-      {activeTab === 'resume' && <Resume />}
-      {activeTab === 'projects' && <Projects projects={projects} />}
-      {activeTab === 'certificates' && <Certificates certificates={certificates} />}
-      {activeTab === 'contact' && <Contact />}
+      <div className="section-view" key={activeTab}>
+        {activeTab === 'about' && <About aboutMe={aboutMe} />}
+        {activeTab === 'resume' && <Resume />}
+        {activeTab === 'projects' && <Projects projects={projects} />}
+        {activeTab === 'certificates' && <Certificates certificates={certificates} />}
+        {activeTab === 'contact' && <Contact />}
+      </div>
     </div>
   );
 };
