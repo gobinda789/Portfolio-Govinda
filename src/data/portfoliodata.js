@@ -25,7 +25,7 @@ export const personalInfo = {
 
 export const aboutMe = {
   description: [
-    "I am a final-year Electronics, Communication and Information Engineering student with a strong interest in Machine Learning, Embedded Systems, and practical engineering applications.",
+    "I am an Electronics, Communication and Information Engineer with a strong interest in Machine Learning, Embedded Systems, and practical engineering applications.",
     "I enjoy building systems that combine hardware and software — especially using platforms like ESP32 and Arduino along with Python-based data processing. I am currently learning and improving my understanding of machine learning concepts, signal analysis basics, and real-time system development.",
     "My focus is on learning by building real projects. I prefer practical implementation over theory and continuously work on improving my technical depth step by step."
   ],
